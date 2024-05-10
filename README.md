@@ -2,6 +2,9 @@
 
 Welcome to the _Iris Power_ repo! <span style="font-size: 1.2em">☀️</span>
 
+## Figma Design Files&nbsp;&nbsp;<span style="font-size: 1.2em">🎨</span>
+**Figma URL:** [https://www.figma.com/file/BVs59J0pKqq33Bk8zcY7J0/IRIS-POWER?type=design&node-id=43%3A2&mode=design&t=dOxqINzJgqUsCcwH-1](https://www.figma.com/file/BVs59J0pKqq33Bk8zcY7J0/IRIS-POWER?type=design&node-id=43%3A2&mode=design&t=dOxqINzJgqUsCcwH-1)
+
 ## Live Preview&nbsp;&nbsp;<span style="font-size: 1.2em">👀</span>
 This repository is configured with Netlify to automatically redeploy whenever new code is pushed to the `main` branch.
 
