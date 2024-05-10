@@ -16,7 +16,7 @@
   /* 2 */
   border-style: solid;
   /* 2 */
-  border-color: #e5e7eb;
+  border-color: currentColor;
   /* 2 */
 }
 
@@ -554,38 +554,408 @@ video {
   --tw-contain-style:  ;
 }
 
-.grid {
-  display: grid;
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
 }
 
-.h-screen {
-  height: 100vh;
+.mb-\[120px\] {
+  margin-bottom: 120px;
 }
 
-.place-content-center {
-  place-content: center;
+.mt-8 {
+  margin-top: 2rem;
 }
 
-.text-3xl {
-  font-size: 1.875rem;
-  line-height: 2.25rem;
+.mt-1 {
+  margin-top: 0.25rem;
+}
+
+.flex {
+  display: flex;
+}
+
+.h-12 {
+  height: 3rem;
+}
+
+.h-20 {
+  height: 5rem;
+}
+
+.h-4 {
+  height: 1rem;
+}
+
+.h-\[6px\] {
+  height: 6px;
+}
+
+.h-3 {
+  height: 0.75rem;
+}
+
+.w-4 {
+  width: 1rem;
+}
+
+.w-\[6px\] {
+  width: 6px;
+}
+
+.w-3 {
+  width: 0.75rem;
+}
+
+.max-w-7xl {
+  max-width: 80rem;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.gap-12 {
+  gap: 3rem;
+}
+
+.gap-4 {
+  gap: 1rem;
+}
+
+.gap-8 {
+  gap: 2rem;
+}
+
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.rounded-lg {
+  border-radius: 0.5rem;
+}
+
+.rounded-md {
+  border-radius: 0.375rem;
+}
+
+.rounded-xl {
+  border-radius: 0.75rem;
+}
+
+.rounded-full {
+  border-radius: 9999px;
+}
+
+.border {
+  border-width: 1px;
+}
+
+.border-\[3px\] {
+  border-width: 3px;
+}
+
+.border-light-gray {
+  --tw-border-opacity: 1;
+  border-color: rgb(208 213 221 / var(--tw-border-opacity));
+}
+
+.border-\[\#F4EBFF\] {
+  --tw-border-opacity: 1;
+  border-color: rgb(244 235 255 / var(--tw-border-opacity));
+}
+
+.border-iris-orange {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 92 0 / var(--tw-border-opacity));
+}
+
+.bg-iris-blue {
+  --tw-bg-opacity: 1;
+  background-color: rgb(0 35 71 / var(--tw-bg-opacity));
+}
+
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
+.bg-iris-orange {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 92 0 / var(--tw-bg-opacity));
+}
+
+.px-2 {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.px-9 {
+  padding-left: 2.25rem;
+  padding-right: 2.25rem;
+}
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px;
+}
+
+.py-0\.5 {
+  padding-top: 0.125rem;
+  padding-bottom: 0.125rem;
+}
+
+.py-1 {
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+}
+
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.px-7 {
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.pl-3 {
+  padding-left: 0.75rem;
+}
+
+.pr-1 {
+  padding-right: 0.25rem;
+}
+
+.pl-1 {
+  padding-left: 0.25rem;
+}
+
+.pr-3 {
+  padding-right: 0.75rem;
+}
+
+.font-schibsted {
+  font-family: SchibstedGrotesk, sans-serif;
+}
+
+.text-\[144px\] {
+  font-size: 144px;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
 }
 
 .font-bold {
   font-weight: 700;
 }
 
-.text-blue-500 {
-  --tw-text-opacity: 1;
-  color: rgb(59 130 246 / var(--tw-text-opacity));
+.font-medium {
+  font-weight: 500;
 }
 
-.text-green-500 {
-  --tw-text-opacity: 1;
-  color: rgb(34 197 94 / var(--tw-text-opacity));
+.font-normal {
+  font-weight: 400;
 }
 
-.text-green-600 {
+.uppercase {
+  text-transform: uppercase;
+}
+
+.leading-\[144px\] {
+  line-height: 144px;
+}
+
+.leading-7 {
+  line-height: 1.75rem;
+}
+
+.text-gray {
   --tw-text-opacity: 1;
-  color: rgb(22 163 74 / var(--tw-text-opacity));
+  color: rgb(52 64 84 / var(--tw-text-opacity));
+}
+
+.text-iris-supply-green {
+  --tw-text-opacity: 1;
+  color: rgb(1 92 45 / var(--tw-text-opacity));
+}
+
+.text-white {
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+/* SchibstedGrotesk-Black */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Black.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-BlackItalic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BlackItalic.ttf') format('truetype');
+
+  font-weight: 900;
+
+  font-style: italic;
+}
+
+/* SchibstedGrotesk-Bold */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Bold.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-BoldItalic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BoldItalic.ttf') format('truetype');
+
+  font-weight: bold;
+
+  font-style: italic;
+}
+
+/* SchibstedGrotesk-ExtraBold */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBold.ttf') format('truetype');
+
+  font-weight: 800;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-ExtraBoldItalic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBoldItalic.ttf') format('truetype');
+
+  font-weight: 800;
+
+  font-style: italic;
+}
+
+/* SchibstedGrotesk-Italic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Italic.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: italic;
+}
+
+/* SchibstedGrotesk-Medium */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Medium.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-MediumItalic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-MediumItalic.ttf') format('truetype');
+
+  font-weight: 500;
+
+  font-style: italic;
+}
+
+/* SchibstedGrotesk-Regular */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Regular.ttf') format('truetype');
+
+  font-weight: normal;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-SemiBold */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBold.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-style: normal;
+}
+
+/* SchibstedGrotesk-SemiBoldItalic */
+
+@font-face {
+  font-family: 'SchibstedGrotesk';
+
+  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBoldItalic.ttf') format('truetype');
+
+  font-weight: 600;
+
+  font-style: italic;
 }
