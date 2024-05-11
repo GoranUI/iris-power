@@ -1,7 +1,8 @@
 ### TODOs for this project:
 
-- [ ] Remove unused font weights
+- [x] Remove unused font weights
 - [ ] Add meta tags
+- [ ] Add favicon
 - [x] Add Proxima Nova font
 - [x] Hamburger icon
 - [ ] Check Iris Supply URL
