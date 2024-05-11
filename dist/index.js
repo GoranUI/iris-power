@@ -13,12 +13,15 @@ const closeMenu = () => {
 };
 
 const showOrHideScrollToTopButton = () => {
+  const button = document.getElementById('scroll-to-top-button');
   if (window.scrollY > 80) {
-    document.getElementById('scroll-to-top-button').classList.remove('opacity-0');
-    document.getElementById('scroll-to-top-button').classList.add('opacity-100');
+    button.classList.remove('opacity-0');
+    button.classList.add('opacity-100');
+    button.disabled = false;
   } else {
-    document.getElementById('scroll-to-top-button').classList.add('opacity-0');
-    document.getElementById('scroll-to-top-button').classList.remove('opacity-100');
+    button.classList.add('opacity-0');
+    button.classList.remove('opacity-100');
+    button.disabled = true;
   }
 };
 
