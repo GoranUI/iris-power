@@ -5,5 +5,5 @@
 - [ ] Add favicon
 - [x] Add Proxima Nova font
 - [x] Hamburger icon
-- [ ] Check Iris Supply URL
+- [x] Check Iris Supply URL
 - [ ] Add social URLs
