@@ -2,4 +2,5 @@
 
 - [ ] Remove unused font weights
 - [ ] Add meta tags
-- [ ] Add Proxima Nova font
+- [x] Add Proxima Nova font
+- [x] Hamburger icon

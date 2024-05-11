@@ -7,60 +7,280 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 
-<body class="bg-iris-blue px-9 py-2 max-w-7xl mx-auto font-schibsted">
-  <header class="flex items-center justify-between h-20 mb-[120px]">
-    <div>
-      <img src="./assets/images/logo.svg" alt="Iris Power Logo" class="h-12">
+<body class="bg-iris-blue px-4 sm:px-7 md:px-9 py-2 max-w-7xl mx-auto font-schibsted overflow-x-hidden">
+  <!-- Overlay for sidebar menu -->
+  <div class="absolute inset-0 z-10 bg-black opacity-0 transition-opacity duration-75 pointer-events-none" id="overlay">
+  </div>
+
+  <!-- Sidebar menu -->
+  <div class="translate-x-full fixed top-0 bottom-0 right-0 z-20 w-64 bg-white transition-all duration-75 lg:hidden"
+    id="menu">
+    <div class="h-20 flex items-center justify-end px-4 sm:px-7 md:px-9 my-2">
+      <button class="text-iris-blue px-2 py-2 rounded-lg" id="menu-button-close">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="w-8 h-8">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M6 18 18 6M6 6l12 12" />
+        </svg>
+      </button>
     </div>
-    <div class="flex items-center gap-12">
-      <a href="https://github.com/macko/iris-power" class="text-white font-bold">Who we are</a>
-      <a href="https://twitter.com/iris_power" class="text-white font-bold">Why us?</a>
-      <a href="https://discord.gg/iris-power" class="text-white font-bold">Our services</a>
-      <a href="https://iris-power.com" class="text-white font-bold">Our solutions</a>
-      <a href="https://iris-power.com" class="text-white font-bold">Careers</a>
-      <a href="https://iris-power.com" class="text-white font-bold">Contact us</a>
-      <a href="https://iris-power.com" class="bg-white px-4 py-3 rounded-lg text-iris-supply-green font-bold uppercase">
-        Iris Supply
-      </a>
+    <div class="px-8">
+      <nav class="flex flex-col gap-6" id="mobile-nav">
+        <a href="#who-we-are" class="text-iris-blue font-bold">Who we are</a>
+        <a href="#" class="text-iris-blue font-bold">Why us?</a>
+        <a href="#" class="text-iris-blue font-bold">Our services</a>
+        <a href="#" class="text-iris-blue font-bold">Careers</a>
+        <a href="#" class="text-iris-blue font-bold">Contact us</a>
+        <a href="#" class="text-iris-supply-green font-bold flex items-center gap-1 mt-4">
+          Iris Supply
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" class="w-5 h-5">
+            <path fill-rule="evenodd"
+              d="M4.25 5.5a.75.75 0 0 0-.75.75v8.5c0 .414.336.75.75.75h8.5a.75.75 0 0 0 .75-.75v-4a.75.75 0 0 1 1.5 0v4A2.25 2.25 0 0 1 12.75 17h-8.5A2.25 2.25 0 0 1 2 14.75v-8.5A2.25 2.25 0 0 1 4.25 4h5a.75.75 0 0 1 0 1.5h-5Z"
+              clip-rule="evenodd" />
+            <path fill-rule="evenodd"
+              d="M6.194 12.753a.75.75 0 0 0 1.06.053L16.5 4.44v2.81a.75.75 0 0 0 1.5 0v-4.5a.75.75 0 0 0-.75-.75h-4.5a.75.75 0 0 0 0 1.5h2.553l-9.056 8.194a.75.75 0 0 0-.053 1.06Z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+      </nav>
     </div>
-  </header>
-  <main class="flex flex-col gap-8">
+  </div>
+
+  <!-- Dot pattern -->
+  <div class="dot-pattern">
+    <!-- Header -->
+    <header class="flex items-center justify-between h-20 mb-[40px] lg:mb-[120px]">
+      <div>
+        <a href="#">
+          <img src="./assets/images/logo.svg" alt="Iris Power Logo" class="h-10 md:h-12">
+        </a>
+      </div>
+      <div class="block lg:hidden">
+        <button class="text-white px-2 py-2 rounded-lg" id="menu-button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-8 h-8">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+      <nav class="hidden lg:flex lg:items-center lg:gap-8">
+        <a href="#" class="text-white font-bold">Who we are</a>
+        <a href="#" class="text-white font-bold">Why us?</a>
+        <a href="#" class="text-white font-bold">Our services</a>
+        <a href="#" class="text-white font-bold">Careers</a>
+        <a href="#" class="text-white font-bold">Contact us</a>
+        <a href="#" class="bg-white px-4 py-3 rounded-lg text-iris-supply-green font-bold uppercase">
+          Iris Supply
+        </a>
+      </nav>
+    </header>
+
+    <!-- Hero -->
     <section>
-      <a href="#" class="flex">
-        <div class="bg-white rounded-xl flex items-center gap-4 py-1 pr-3 pl-1 border border-light-gray">
-          <div class="py-0.5 px-2 rounded-md border border-light-gray flex items-center gap-1">
-            <div>
-              <div class="w-3 h-3 rounded-full bg-iris-orange border-[3px] border-[#F4EBFF]"></div>
+      <div>
+        <a href="#" class="flex">
+          <div class="bg-white rounded-xl flex items-center gap-4 py-1 pr-3 pl-1 border border-light-gray">
+            <div class="py-0.5 px-2 rounded-md border border-light-gray flex items-center gap-1">
+              <div>
+                <div class="w-3 h-3 rounded-full bg-iris-orange border-[3px] border-[#F4EBFF]"></div>
+              </div>
+              <div class="font-schibsted font-medium text-sm text-gray">Now Hiring</div>
             </div>
-            <div class="font-schibsted font-medium text-sm text-gray">Now Hiring</div>
-          </div>
-          <div class="flex items-center gap-1">
-            <div class="font-schibsted font-medium text-sm text-gray">Join our team</div>
-            <div>
-              <img src="./assets/icons/arrow-right.svg" alt="" class="w-4 h-4">
+            <div class="flex items-center gap-1">
+              <div class="font-schibsted font-medium text-sm text-gray">Join our team</div>
+              <div>
+                <img src="./assets/icons/arrow-right.svg" alt="" class="w-4 h-4">
+              </div>
             </div>
           </div>
-        </div>
-        </div>
-      </a>
+        </a>
+      </div>
+      <div class="mt-8 md:mt-16">
+        <h1
+          class="text-white text-[60px] leading-[60px] sm:text-[72px] sm:leading-[72px] md:text-[96px] md:leading-[96px] lg:text-[144px] lg:leading-[144px] font-proxima font-semibold max-w-lg md:max-w-none">
+          Let&CloseCurlyQuote;s Save Our <br class="hidden md:block">Planet Together
+        </h1>
+      </div>
+      <div class="mt-8">
+        <p class="font-schibsted font-normal text-normal sm:text-lg text-white leading-7 max-w-lg">
+          Iris Power specialize in Solar & Solar+Storage projects in the Commercial &<br class="hidden lg:block">
+          Industrial (C&I) sector as well as Community Solar.<br class="hidden lg:block">
+          Our team can help qualify your project from early stages up to commissioning!
+        </p>
+      </div>
+      <div class="mt-8">
+        <a href="#"
+          class="font-schibsted font-bold text-white text-normal sm:text-lg leading-7 px-5 py-3 sm:px-7 sm:py-4 bg-iris-orange rounded-lg border border-iris-orange">
+          Ready to go solar?
+        </a>
+      </div>
     </section>
-    <section>
-      <h1 class="text-white text-[144px] leading-[144px]">Let's Save Our Planet Together</h1>
-    </section>
-    <section class="mt-8">
-      <p class="font-schibsted font-normal text-lg text-white leading-7">
-        Iris Power specialize in Solar & Solar+Storage projects in the Commercial &<br>
-        Industrial (C&I) sector as well as Community Solar.<br>
-        Our team can help qualify your project from early stages up to commissioning!
+
+    <!-- Divider Arrow -->
+    <div class="pt-20 md:pt-28 pb-[90px] md:pb-[120px]">
+      <img src="./assets/icons/arrow-down.svg" alt="" class="">
+    </div>
+  </div>
+
+  <!-- Who we are -->
+  <section id="who-we-are">
+    <h3 class="font-proxima font-bold text-normal leading-6 uppercase text-iris-orange">Who we are</h3>
+    <div class="mt-4 grid grid-cols-1 lg:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
+      <h2
+        class="font-proxima font-semibold text-4xl leading-[44px] sm:text-5xl sm:leading-[60px] text-white max-w-md sm:max-w-3xl">
+        Your Partner for Solar Projects in <br class="hidden lg:block">C&I and Community Sectors!
+      </h2>
+      <p class="font-schibsted font-normal text-normal sm:text-lg leading-7 text-white max-w-xl lg:max-w-none">
+        Iris Power is guided by a seasoned team with<br class="hidden lg:block">
+        extensive expertise in project management,<br class="hidden lg:block">
+        financial analysis, engineering design,<br class="hidden lg:block">
+        procurement, and customer support.
       </p>
-    </section>
-    <section class="mt-1">
-      <a href="#"
-        class="font-schibsted font-bold text-white text-lg leading-7 px-7 py-4 bg-iris-orange rounded-lg border border-iris-orange">
-        Ready to go solar?
-      </a>
-    </section>
-  </main>
+    </div>
+    <div class="mt-16 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="flex items-center gap-4 lg:block">
+        <img src="./assets/images/avatar-diana-fitzpatrick.png" alt="Diana Fitzpatrick"
+          class="w-[80px] h-[80px] lg:w-24 lg:h-24">
+        <div>
+          <p
+            class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-white mt-5">
+            Diana Fitzpatrick
+          </p>
+          <p
+            class="font-schibsted font-bold text-normal sm:text-lg leading-6 lg:text-xl lg:leading-7 text-iris-orange mt-2">
+            Procurement and Sales <br class="hidden lg:block">Director
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 lg:block">
+        <img src="./assets/images/avatar-diala-sawaged.png" alt="Diala Sawaged"
+          class="w-[80px] h-[80px] lg:w-24 lg:h-24">
+        <div>
+          <p
+            class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-white mt-5">
+            Diala Sawaged
+          </p>
+          <p
+            class="font-schibsted font-bold text-normal sm:text-lg leading-6 lg:text-xl lg:leading-7 text-iris-orange mt-2">
+            Commercial Project <br class="hidden lg:block">Manager</p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 lg:block">
+        <img src="./assets/images/avatar-eric-shawn.png" alt="Eric Shawn" class="w-[80px] h-[80px] lg:w-24 lg:h-24">
+        <div>
+          <p
+            class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-white mt-5">
+            Eric Shawn
+          </p>
+          <p
+            class="font-schibsted font-bold text-normal sm:text-lg leading-6 lg:text-xl lg:leading-7 text-iris-orange mt-2">
+            Business Development <br class="hidden lg:block">Manager
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center gap-4 lg:block">
+        <img src="./assets/images/avatar-wes.png" alt="Wes" class="w-[80px] h-[80px] lg:w-24 lg:h-24">
+        <div>
+          <p
+            class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-white mt-5">
+            Wes</p>
+          <p
+            class="font-schibsted font-bold text-normal sm:text-lg leading-6 lg:text-xl lg:leading-7 text-iris-orange mt-2">
+            PV Modules Sales <br class="hidden lg:block">Manager</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why us? -->
+  <section id="why-us" class="py-32 lg:py-48 lg:logo-background">
+    <h3 class="font-proxima font-bold text-normal leading-6 uppercase text-iris-orange">Why us?</h3>
+    <div class="mt-4 space-y-8 md:space-y-12">
+      <h2
+        class="font-proxima font-semibold text-4xl leading-[44px] sm:text-5xl sm:leading-[60px] text-white max-w-md sm:max-w-3xl">
+        Iris Power specializes in C&I, Residential and Community Solar PV/PV+ESS projects.
+      </h2>
+      <p class="font-schibsted font-normal text-normal sm:text-lg leading-7 text-white max-w-xl">
+        Dedicated to empowering commercial/industrial real estate owners as well as land owners to unlock the full
+        potential of their properties.
+        With a focus on sustainability and financial efficiency, Iris Power offers tailored solutions designed to
+        maximize the benefit out of the property as well as the systems proposed.
+        By leveraging the extensive benefits of solar energy, they provide comprehensive strategies that not only reduce
+        environmental impact but also provide an in depth financial analysis.
+        Through meticulous analysis and strategic implementation, Iris Power ensures that every property owner can
+        capitalize on the immense opportunities presented by solar energy, fostering long-term sustainability and
+        financial prosperity.
+      </p>
+    </div>
+  </section>
+
+  <!-- Our services -->
+  <section id="our-services" class="xl:remove-blue-background xl:px-9">
+    <div class="px-4 mx-[-16px] sm:px-7 sm:mx-[-28px] md:px-9 md:mx-[-36px] py-32 lg:py-48 bg-white">
+      <div class="max-w-7xl mx-auto">
+        <div class="bg-white">
+          <h3 class="font-proxima font-bold text-normal leading-6 uppercase text-iris-orange">Our services</h3>
+          <div class="mt-4">
+            <h2
+              class="font-proxima font-semibold text-4xl leading-[44px] sm:text-5xl sm:leading-[60px] text-iris-blue max-w-md sm:max-w-3xl">
+              Solar Solutions Suite:
+            </h2>
+          </div>
+          <div class="mt-9 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div>
+              <p
+                class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-iris-blue mt-5">
+                Engineering
+              </p>
+              <p class="font-schibsted font-normal text-sm lg:text-normal text-body-gray mt-2">
+                Precision and Innovation: Crafting Solar Solutions with Expertise and Ingenuity.
+              </p>
+            </div>
+
+            <div>
+              <p
+                class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-iris-blue mt-5">
+                Procurement
+              </p>
+              <p class="font-schibsted font-normal text-sm lg:text-normal text-body-gray mt-2">
+                Effortless Acquisition: From Components to Contracts, Streamlining the Supply Chain for Success.
+              </p>
+            </div>
+
+            <div>
+              <p
+                class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-iris-blue mt-5">
+                Installation
+              </p>
+              <p class="font-schibsted font-normal text-sm lg:text-normal text-body-gray mt-2">
+                Efficient Deployment: Swift and Reliable Implementation of PV and Energy Storage Solutions.
+              </p>
+            </div>
+
+            <div>
+              <p
+                class="font-proxima font-semibold text-normal sm:text-xl leading-6 lg:text-2xl lg:leading-7 text-iris-blue mt-5">
+                Consultation
+              </p>
+              <p class="font-schibsted font-normal text-sm lg:text-normal text-body-gray mt-2">
+                Expert Guidance: Navigating Solar Complexities with Tailored Consultation Services.
+              </p>
+            </div>
+
+
+          </div>
+
+
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src=" ./index.js">
+  </script>
 </body>
 
 </html>

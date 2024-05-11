@@ -2,98 +2,212 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer utilities {
+  .dot-pattern {
+    background-image: url('./assets/images/background-dot-pattern.svg');
+    background-position: center;
+    background-repeat: repeat-y;
+  }
+
+  .logo-background {
+    background-image: url('./assets/images/logo-background.svg');
+    background-position: top 216px right 0px;
+    background-repeat: no-repeat;
+  }
+
+  .remove-blue-background {
+    @apply w-screen relative left-[calc(-50vw+50%)];
+  }
+}
+
 /* SchibstedGrotesk-Black */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Black.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Black.ttf') format('truetype');
   font-weight: 900;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-BlackItalic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BlackItalic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BlackItalic.ttf') format('truetype');
   font-weight: 900;
   font-style: italic;
 }
 
 /* SchibstedGrotesk-Bold */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Bold.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Bold.ttf') format('truetype');
   font-weight: bold;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-BoldItalic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BoldItalic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-BoldItalic.ttf') format('truetype');
   font-weight: bold;
   font-style: italic;
 }
 
 /* SchibstedGrotesk-ExtraBold */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBold.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBold.ttf') format('truetype');
   font-weight: 800;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-ExtraBoldItalic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBoldItalic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-ExtraBoldItalic.ttf') format('truetype');
   font-weight: 800;
   font-style: italic;
 }
 
 /* SchibstedGrotesk-Italic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Italic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Italic.ttf') format('truetype');
   font-weight: normal;
   font-style: italic;
 }
 
 /* SchibstedGrotesk-Medium */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Medium.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Medium.ttf') format('truetype');
   font-weight: 500;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-MediumItalic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-MediumItalic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-MediumItalic.ttf') format('truetype');
   font-weight: 500;
   font-style: italic;
 }
 
 /* SchibstedGrotesk-Regular */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Regular.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-Regular.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-SemiBold */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBold.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBold.ttf') format('truetype');
   font-weight: 600;
   font-style: normal;
 }
 
 /* SchibstedGrotesk-SemiBoldItalic */
 @font-face {
-  font-family: 'SchibstedGrotesk';
-  src: url('./dist/assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBoldItalic.ttf') format('truetype');
+  font-family: 'Schibsted Grotesk';
+  src: url('./assets/fonts/Schibsted_Grotesk/SchibstedGrotesk-SemiBoldItalic.ttf') format('truetype');
   font-weight: 600;
   font-style: italic;
+}
+
+/* ProximaNovaExtrabold */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 900;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaExtrabold.otf') format('opentype');
+}
+
+/* ProximaNovaExtraboldItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 900;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaExtraboldItalic.otf') format('opentype');
+}
+
+/* ProximaNovaBold */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 800;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaBold.otf') format('opentype');
+}
+
+/* ProximaNovaBoldItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 800;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaBoldItalic.otf') format('opentype');
+}
+
+/* ProximaNovaSemibold */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaSemibold.otf') format('opentype');
+}
+
+/* ProximaNovaSemiboldItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 600;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaSemiboldItalic.otf') format('opentype');
+}
+
+/* ProximaNovaRegular */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaRegular.otf') format('opentype');
+}
+
+/* ProximaNovaRegularItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 400;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaRegularItalic.otf') format('opentype');
+}
+
+/* ProximaNovaLight */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 300;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaLight.otf') format('opentype');
+}
+
+/* ProximaNovaLightItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 300;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaLightItalic.otf') format('opentype');
+}
+
+/* ProximaNovaThin */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: normal;
+  font-weight: 100;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaThin.otf') format('opentype');
+}
+
+/* ProximaNovaThinItalic */
+@font-face {
+  font-family: 'Proxima Nova';
+  font-style: italic;
+  font-weight: 100;
+  src: url('./assets/fonts/Proxima_Nova/ProximaNovaThinItalic.otf') format('opentype');
 }
