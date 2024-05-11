@@ -12,8 +12,23 @@ const closeMenu = () => {
   document.getElementById('overlay').classList.add('opacity-0');
 };
 
+const showOrHideScrollToTopButton = () => {
+  if (window.scrollY > 80) {
+    document.getElementById('scroll-to-top-button').classList.remove('opacity-0');
+    document.getElementById('scroll-to-top-button').classList.add('opacity-100');
+  } else {
+    document.getElementById('scroll-to-top-button').classList.add('opacity-0');
+    document.getElementById('scroll-to-top-button').classList.remove('opacity-100');
+  }
+};
+
+const scrollToTop = () => window.scrollTo({ top: 0 });
+
 window.onload = () => {
   document.getElementById('menu-button').addEventListener('click', openMenu);
   document.getElementById('menu-button-close').addEventListener('click', closeMenu);
   document.querySelectorAll('#mobile-nav a').forEach((link) => link.addEventListener('click', closeMenu));
+
+  document.getElementById('scroll-to-top-button').addEventListener('click', scrollToTop);
+  window.addEventListener('scroll', showOrHideScrollToTopButton);
 };
