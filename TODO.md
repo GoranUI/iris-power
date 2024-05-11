@@ -4,3 +4,5 @@
 - [ ] Add meta tags
 - [x] Add Proxima Nova font
 - [x] Hamburger icon
+- [ ] Check Iris Supply URL
+- [ ] Add social URLs

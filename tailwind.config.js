@@ -13,6 +13,7 @@ module.exports = {
         'gray': '#344054',
         'light-gray': '#D0D5DD',
         'body-gray': '#475467',
+        'icon-gray': '#F9F5FF',
       },
       fontFamily: {
         'schibsted': ['Schibsted Grotesk', 'sans-serif'],
