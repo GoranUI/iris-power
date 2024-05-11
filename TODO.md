@@ -1,9 +1,15 @@
 ### TODOs for this project:
 
+- [ ] Add hover states
+- [ ] Add social URLs
+- [ ] Add URLs / actions to 'Join our team', 'Ready to go solar?', 'Send us your CV' links / buttons
+- [ ] Add ./assets/images/seo-image-{og,twitter}.png
+- [ ] Check if favicon needs to be changed
+- [ ] Optimize for production (minify HTML, CSS, JS, SVGs)
+
 - [x] Remove unused font weights
-- [ ] Add meta tags
-- [ ] Add favicon
 - [x] Add Proxima Nova font
 - [x] Hamburger icon
 - [x] Check Iris Supply URL
-- [ ] Add social URLs
+- [x] Add meta tags
+- [x] Add favicon
