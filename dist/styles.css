@@ -1448,6 +1448,10 @@ video {
     width: 6rem;
   }
 
+  .lg\:max-w-3xl {
+    max-width: 48rem;
+  }
+
   .lg\:max-w-none {
     max-width: none;
   }
