@@ -1114,6 +1114,12 @@ video {
   transition-duration: 150ms;
 }
 
+.transition-colors {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-opacity {
   transition-property: opacity;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1200,6 +1206,30 @@ video {
   font-weight: 600;
 
   src: url('./assets/fonts/Proxima_Nova/ProximaNovaSemibold.otf') format('opentype');
+}
+
+.hover\:border-iris-orange-darkest:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(163 62 5 / var(--tw-border-opacity));
+}
+
+.hover\:bg-iris-orange-darker:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(204 74 0 / var(--tw-bg-opacity));
+}
+
+.hover\:text-iris-orange:hover {
+  --tw-text-opacity: 1;
+  color: rgb(255 92 0 / var(--tw-text-opacity));
+}
+
+.hover\:underline:hover {
+  text-decoration-line: underline;
+}
+
+.hover\:brightness-\[85\%\]:hover {
+  --tw-brightness: brightness(85%);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
 @media (min-width: 640px) {
