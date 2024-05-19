@@ -1,8 +1,8 @@
 ### TODOs for this project:
 
-- [ ] Logo background SVG is broken
+- [ ] Add Send us your CV button and figure out what to do with that and the newsletter section
+
 - [ ] Add social URLs
-- [ ] Add URLs / actions to 'Join our team', 'Ready to go solar?', 'Send us your CV' links / buttons
 - [ ] Add ./assets/images/seo-image-{og,twitter}.png
 - [ ] Optimize for production (minify HTML, CSS, JS, SVGs)
 
