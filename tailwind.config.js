@@ -8,7 +8,7 @@ module.exports = {
       },
       colors: {
         'iris-blue': '#002347',
-        'iris-orange': '#D64101',
+        'iris-orange': '#FF5C00',
         'iris-orange-darker': '#CC4A00',
         'iris-supply-green': '#015C2D',
         'gray': '#344054',

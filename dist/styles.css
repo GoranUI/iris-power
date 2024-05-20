@@ -1138,7 +1138,7 @@ select {
 
 .border-iris-orange {
   --tw-border-opacity: 1;
-  border-color: rgb(214 65 1 / var(--tw-border-opacity));
+  border-color: rgb(255 92 0 / var(--tw-border-opacity));
 }
 
 .border-light-gray {
@@ -1167,7 +1167,7 @@ select {
 
 .bg-iris-orange {
   --tw-bg-opacity: 1;
-  background-color: rgb(214 65 1 / var(--tw-bg-opacity));
+  background-color: rgb(255 92 0 / var(--tw-bg-opacity));
 }
 
 .bg-lightest-gray {
@@ -1383,7 +1383,7 @@ select {
 
 .text-iris-orange {
   --tw-text-opacity: 1;
-  color: rgb(214 65 1 / var(--tw-text-opacity));
+  color: rgb(255 92 0 / var(--tw-text-opacity));
 }
 
 .text-iris-supply-green {
@@ -1556,7 +1556,7 @@ select {
 
 .hover\:text-iris-orange:hover {
   --tw-text-opacity: 1;
-  color: rgb(214 65 1 / var(--tw-text-opacity));
+  color: rgb(255 92 0 / var(--tw-text-opacity));
 }
 
 .hover\:underline:hover {
