@@ -10,7 +10,6 @@ module.exports = {
         'iris-blue': '#002347',
         'iris-orange': '#FF5C00',
         'iris-orange-darker': '#CC4A00',
-        'iris-orange-darkest': '#A33E05',
         'iris-supply-green': '#015C2D',
         'gray': '#344054',
         'light-gray': '#D0D5DD',
