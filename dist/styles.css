@@ -1470,6 +1470,8 @@ select {
   font-weight: bold;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 /* SchibstedGrotesk-Medium */
@@ -1482,6 +1484,8 @@ select {
   font-weight: 500;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 /* SchibstedGrotesk-Regular */
@@ -1494,6 +1498,8 @@ select {
   font-weight: normal;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 /* SchibstedGrotesk-SemiBold */
@@ -1506,6 +1512,8 @@ select {
   font-weight: 600;
 
   font-style: normal;
+
+  font-display: swap;
 }
 
 /* ProximaNovaBold */
@@ -1518,6 +1526,8 @@ select {
   font-weight: 800;
 
   src: url('./assets/fonts/Proxima_Nova/ProximaNovaBold.otf') format('opentype');
+
+  font-display: swap;
 }
 
 /* ProximaNovaSemibold */
@@ -1530,6 +1540,8 @@ select {
   font-weight: 600;
 
   src: url('./assets/fonts/Proxima_Nova/ProximaNovaSemibold.otf') format('opentype');
+
+  font-display: swap;
 }
 
 .hover\:border-iris-orange-darker:hover {
